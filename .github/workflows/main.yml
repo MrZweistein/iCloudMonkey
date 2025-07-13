@@ -17,6 +17,9 @@ jobs:
       - name: Setup MSBuild path
         uses: microsoft/setup-msbuild@v2
 
+      - name: Restore NuGet packages
+        run: dotnet restore
+
       - name: Build project
         run: msbuild iCloudMonkey/iCloudMonkey.csproj /p:Configuration=Release
     
