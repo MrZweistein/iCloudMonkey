@@ -9,6 +9,7 @@
 		<UseWPF>True</UseWPF>
 		<ApplicationIcon>assets\monkey.ico</ApplicationIcon>
 		<NuGetAudit>False</NuGetAudit>
+		<Configurations>Debug;Release;GitHubRelease</Configurations>
 	</PropertyGroup>
 	
 	<Target Name="UpdateVersion" BeforeTargets="BeforeBuild">
@@ -29,23 +30,22 @@
 		<Copyright>Copyright © 2025 Zweistein Solutions</Copyright>
 	</PropertyGroup>
 
-
 	<PropertyGroup Condition="'$(Configuration)' == 'Release'">
 		<OutputPath>C:\Apps\Tools</OutputPath>
 	</PropertyGroup>
-
-
 
 	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
 	  <IsPublishable>False</IsPublishable>
 	</PropertyGroup>
 
-
-
 	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
 	  <IsPublishable>False</IsPublishable>
 	</PropertyGroup>
 
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='GitHubRelease|AnyCPU'">
+	  <IsPublishable>False</IsPublishable>
+	  <Optimize>True</Optimize>
+	</PropertyGroup>
 
 	<ItemGroup>
 		<COMReference Include="UIAutomationClient">
