@@ -10,9 +10,40 @@
 		<ApplicationIcon>assets\monkey.ico</ApplicationIcon>
 		<NuGetAudit>False</NuGetAudit>
 	</PropertyGroup>
+	
+	<Target Name="UpdateVersion" BeforeTargets="BeforeBuild">
+		<PropertyGroup>
+			<CurrentDate>1.0.$([System.DateTime]::Now.ToString("yyMM.dd"))</CurrentDate>
+			<AssemblyVersion>$(CurrentDate)</AssemblyVersion>
+			<FileVersion>$(CurrentDate)</FileVersion>
+			<Version>$(CurrentDate)</Version>
+		</PropertyGroup>
+	</Target>
+
+	<PropertyGroup>
+		<GenerateAssemblyInfo>true</GenerateAssemblyInfo>
+		<Company>Zweistein Solutions</Company>
+		<Authors>Roger Spiess</Authors>
+		<Product>iCloudMonkey</Product>
+		<Description>See no evil iCloud Application Window</Description>
+		<Copyright>Copyright © 2025 Zweistein Solutions</Copyright>
+	</PropertyGroup>
+
 
 	<PropertyGroup Condition="'$(Configuration)' == 'Release'">
 		<OutputPath>C:\Apps\Tools</OutputPath>
+	</PropertyGroup>
+
+
+
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+	  <IsPublishable>False</IsPublishable>
+	</PropertyGroup>
+
+
+
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+	  <IsPublishable>False</IsPublishable>
 	</PropertyGroup>
 
 

@@ -10,7 +10,6 @@ namespace iCloudMonkey
 {
     public partial class MainWin : Form
     {
-
         // Win32 API imports
         [DllImport("user32.dll")]
         private static extern IntPtr FindWindow(string? lpClassName, string lpWindowName);
@@ -34,7 +33,7 @@ namespace iCloudMonkey
         private ToolStripMenuItem autoStartItem;
         private AutomationEventHandler windowOpenedHandler;
 
-
+        public static uint ActionCount { get; private set; } = 0;
 
         public MainWin()
         {
@@ -44,7 +43,7 @@ namespace iCloudMonkey
             trayMenu = new ContextMenuStrip();
             trayMenu.Items.Add(toggleItem);
             trayMenu.Items.Add(autoStartItem);
-            trayMenu.Items.Add(aboutText, null, (s, e) => SplashWin.ShowSplashWindow());
+            trayMenu.Items.Add(aboutText, null, (s, e) => SplashWin.ShowSplashWindow(true));
             trayMenu.Items.Add("Exit", null, (s, e) => Application.Exit());
 
             trayIcon = new NotifyIcon
@@ -128,6 +127,7 @@ namespace iCloudMonkey
         private void HideWindow(IntPtr hWnd)
         {
             ShowWindow(hWnd, SW_HIDE); // Hide the window if found
+            ActionCount++;
         }
 
         private void SetAutostartMenuItem()
