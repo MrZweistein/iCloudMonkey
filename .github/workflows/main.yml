@@ -26,7 +26,7 @@ jobs:
       - name: Zip compiled output
         run: |
           mkdir output
-          cp -r ./bin/Release/net8.0/* ./output/
+          cp -r ./bin/Release/net8.0-windows/* ./output/
           zip -r compiled.zip ./output
 
       - name: Upload ZIP artifact
