@@ -21,12 +21,12 @@ jobs:
         run: dotnet restore
 
       - name: Build project
-        run: msbuild iCloudMonkey/iCloudMonkey.csproj /p:Configuration=Release
+        run: msbuild iCloudMonkey/iCloudMonkey.csproj /p:Configuration=GitHubRelease
     
       - name: Zip compiled output
         run: |
           mkdir output
-          cp -r ./bin/Release/net8.0-windows/* ./output/
+          cp -r ./bin/GitHubRelease/net8.0-windows/* ./output/
           zip -r compiled.zip ./output
 
       - name: Upload ZIP artifact
