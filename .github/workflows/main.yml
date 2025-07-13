@@ -19,11 +19,8 @@ jobs:
         with:
           dotnet-version: '8.0.x'
 
-      - name: Restore dependencies
-        run: dotnet restore
-
       - name: Build project
-        run: dotnet build --configuration Release
+        run: dotnet build --configuration Release -p:EnableWindowsTargeting=true
 
       - name: Zip compiled output
         run: |
