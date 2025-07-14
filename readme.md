@@ -10,7 +10,7 @@ Copy the files stored in the ZIP to any folder you like and start iCloudMonkey f
 
 **What are the menu options  of iCloudMonkey?**
 
-1. _Pause / Resume_: In case you actually want the iCould Window to persist select "Pause" which will pause the surpression of the iCloud window.  After having selected "Pause" the menu item changes to "Resume" which then can be selected to continue the supressession of the iCloud window popup.
+1. _Pause / Resume_: In case you actually want the iCould Window to persist select "Pause" which will pause the surpression of the iCloud window.  After having selected "Pause" the menu item changes to "Resume" which then can be selected to continue the supression of the iCloud window popup.
 2.  _Auto Start_: If you select this menu item the first time the app will be added to your list of auto staring applications that start with Windows. You can see a checkmark if the setting is active. To disable that setting just selct the same menu item while the checkmark is visible.
 3. _About_: Select this menu item to see the application information window that also tells you how many iCloud Windows were already supressed. The window closes on its own.
 4. _Exit_: Select this menu item to end and exit the application. Thge application will be removed from the system tray.
