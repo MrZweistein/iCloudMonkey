@@ -9,7 +9,7 @@
 		<UseWPF>True</UseWPF>
 		<ApplicationIcon>assets\monkey.ico</ApplicationIcon>
 		<NuGetAudit>False</NuGetAudit>
-		<Configurations>Debug;Release;GitHubRelease</Configurations>
+		<Configurations>Debug;Release</Configurations>
 	</PropertyGroup>
 	
 	<Target Name="UpdateVersion" BeforeTargets="BeforeBuild">
@@ -40,11 +40,6 @@
 
 	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
 	  <IsPublishable>False</IsPublishable>
-	</PropertyGroup>
-
-	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='GitHubRelease|AnyCPU'">
-	  <IsPublishable>False</IsPublishable>
-	  <Optimize>True</Optimize>
 	</PropertyGroup>
 
 	<ItemGroup>

@@ -9,8 +9,6 @@ Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Debug|x64 = Debug|x64
-		GitHubRelease|Any CPU = GitHubRelease|Any CPU
-		GitHubRelease|x64 = GitHubRelease|x64
 		Release|Any CPU = Release|Any CPU
 		Release|x64 = Release|x64
 	EndGlobalSection
@@ -19,10 +17,6 @@ Global
 		{C9426C29-0731-4F23-9FF7-0E17B6720FD3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C9426C29-0731-4F23-9FF7-0E17B6720FD3}.Debug|x64.ActiveCfg = Debug|Any CPU
 		{C9426C29-0731-4F23-9FF7-0E17B6720FD3}.Debug|x64.Build.0 = Debug|Any CPU
-		{C9426C29-0731-4F23-9FF7-0E17B6720FD3}.GitHubRelease|Any CPU.ActiveCfg = GitHubRelease|Any CPU
-		{C9426C29-0731-4F23-9FF7-0E17B6720FD3}.GitHubRelease|Any CPU.Build.0 = GitHubRelease|Any CPU
-		{C9426C29-0731-4F23-9FF7-0E17B6720FD3}.GitHubRelease|x64.ActiveCfg = GitHubRelease|Any CPU
-		{C9426C29-0731-4F23-9FF7-0E17B6720FD3}.GitHubRelease|x64.Build.0 = GitHubRelease|Any CPU
 		{C9426C29-0731-4F23-9FF7-0E17B6720FD3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C9426C29-0731-4F23-9FF7-0E17B6720FD3}.Release|Any CPU.Build.0 = Release|Any CPU
 		{C9426C29-0731-4F23-9FF7-0E17B6720FD3}.Release|x64.ActiveCfg = Release|Any CPU
