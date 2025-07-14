@@ -1,3 +1,5 @@
+### iCloudMonkey - _no see evil iCloud application window_
+
 **What is this App for?**
 
 Under Windows and the circumstance you have installed iCloud there, a iCloud popup window appears on your desktop. The Window appears with the start of Windows and on other occations and there is currently now way I know of to surpress that. This is why I developed this app that monitors windows that open up on teh desktop and checks if it is the iCloud Window. If this is the case, the window is surpressed without ending the application.
