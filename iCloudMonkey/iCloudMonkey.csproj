@@ -14,7 +14,7 @@
 	
 	<Target Name="UpdateVersion" BeforeTargets="BeforeBuild">
 		<PropertyGroup>
-			<CurrentDate>1.0.$([System.DateTime]::Now.ToString("yyMM.dd"))</CurrentDate>
+			<CurrentDate>1.1.$([System.DateTime]::Now.ToString("yyMM.dd"))</CurrentDate>
 			<AssemblyVersion>$(CurrentDate)</AssemblyVersion>
 			<FileVersion>$(CurrentDate)</FileVersion>
 			<Version>$(CurrentDate)</Version>
