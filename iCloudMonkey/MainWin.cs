@@ -29,7 +29,7 @@ namespace iCloudMonkey
         private static string pauseText = "Pause";
         private static string resumeText = "Resume";
         private static string autostartText = "Auto Start";
-        private static string aboutText = "About";
+        private static string aboutText = "Info";
 
         private static bool isMonitoring = true;
 
