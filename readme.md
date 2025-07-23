@@ -1,12 +1,14 @@
 ### iCloudMonkey - _no see evil iCloud application window_
 
-**What is this App for?**
+**What is this application for?**
 
-Under Windows and the circumstance you have installed iCloud there, a iCloud popup window appears on your desktop. The Window appears with the start of Windows and on other occations and there is currently now way I know of to surpress that. This is why I developed this app that monitors windows that open up on teh desktop and checks if it is the iCloud Window. If this is the case, the window is surpressed without ending the application.
+Under Windows and the circumstance you have installed iCloud there, a iCloud popup window appears on your desktop. The Window appears with the start of Windows and on other occations and there is currently now way I know of to surpress that. 
+
+This is why I developed this app which monitors the windows desktop if an new window opens on the desktop. If it is the bespoke iCloud Window the window is supressed without ending the application.
 
 **How iCloudMonkey is installed and started?**
 
-Copy the files stored in the ZIP to any folder you like and start iCloudMonkey from there. The app starts into the tray. In the tray you can mouse click for the menu. If you set the "Auto Start" option iCloudMonkey will start with windows. If you change the location please make sure to disable "Auto Start" before soing so.
+Copy the files stored in the ZIP to any folder you like and start iCloudMonkey from there. The app starts into the tray. In the tray you can mouse click for the menu. If you set the "Auto Start" option iCloudMonkey will start with windows. If you change the location please make sure to disable "Auto Start" before doing so.
 
 **What are the menu options  of iCloudMonkey?**
 
