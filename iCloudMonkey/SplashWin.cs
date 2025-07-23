@@ -11,8 +11,19 @@ using System.Reflection;
 
 namespace iCloudMonkey
 {
+    /// <summary>
+    /// Represents a splash screen window displayed during application startup or specific operations.
+    /// </summary>
+    /// <remarks>The <see cref="SplashWin"/> class is a non-interactive, borderless window designed to provide
+    /// visual feedback to the user during application initialization or other processes. It is displayed in the center
+    /// of the screen and remains on top of all other windows.</remarks>
     public partial class SplashWin : Form
     {
+        /// <summary>
+        /// Initializes a new instance of the <see cref="SplashWin"/> class.
+        /// </summary>
+        /// <remarks>This constructor sets up the splash screen with no border, centers it on the screen, 
+        /// hides it from the taskbar, and ensures it is displayed above all other windows.</remarks>
         public SplashWin()
         {
             InitializeComponent();
@@ -22,6 +33,14 @@ namespace iCloudMonkey
             this.TopMost = true;
         }
 
+        /// <summary>
+        /// Displays a splash window with application information and an optional action count message.
+        /// </summary>
+        /// <remarks>The splash window provides basic application details, including the version and
+        /// description, and remains visible for a short duration before automatically closing. This method is typically
+        /// used to provide a brief loading screen or introductory message to the user.</remarks>
+        /// <param name="showActionCount">A boolean value indicating whether to display the current action count in the splash window. If <see
+        /// langword="true"/>, the action count is shown; otherwise, it is omitted.</param>
         static public void ShowSplashWindow(bool showActionCount = false)
         {
             using (SplashWin splash = new SplashWin())
