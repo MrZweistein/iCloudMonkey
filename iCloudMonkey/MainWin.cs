@@ -17,6 +17,12 @@ namespace iCloudMonkey
         [DllImport("user32.dll")]
         private static extern bool ShowWindow(IntPtr hWnd, int nCmdShow);
 
+        [DllImport("user32.dll")]
+        static extern bool IsWindowVisible(IntPtr hWnd);
+
+        [DllImport("user32.dll")]
+        static extern bool IsIconic(IntPtr hWnd);
+
         private const int SW_HIDE = 0;
 
         private static string targetWindowTitle = "iCloud"; // CHANGE TO TARGET WINDOW TITLE
@@ -120,7 +126,13 @@ namespace iCloudMonkey
             IntPtr hWnd = FindWindow(null, targetWindowTitle);
             if (hWnd != IntPtr.Zero)
             {
-                HideWindow(hWnd); // Hide the window if it exists
+                bool isVisible = IsWindowVisible(hWnd);
+                bool isMinimized = IsIconic(hWnd);
+
+                if (isVisible && !isMinimized)
+                {
+                    HideWindow(hWnd); // Hide the window if it is visible and not minimized
+                }
             }
         }
 

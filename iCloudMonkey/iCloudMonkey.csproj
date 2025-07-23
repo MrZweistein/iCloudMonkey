@@ -28,6 +28,7 @@
 		<Product>iCloudMonkey</Product>
 		<Description>See no evil iCloud Application Window</Description>
 		<Copyright>Copyright © 2025 Zweistein Solutions</Copyright>
+		<AllowUnsafeBlocks>true</AllowUnsafeBlocks>
 	</PropertyGroup>
 
 	<PropertyGroup Condition="'$(Configuration)' == 'Release'">
